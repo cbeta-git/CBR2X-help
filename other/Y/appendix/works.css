@@ -1,0 +1,88 @@
+﻿.head {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 24pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 70px; /*上邊界*/
+	margin-bottom: 70px;
+}
+.head_1 {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 1.5em; /*上邊界*/
+	margin-bottom: 1.5em;
+}
+.head_2 {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 15pt;
+	font-weight: bold;
+	margin-top: 1.5em; /*上邊界*/
+	margin-bottom: 1.5em;
+	text-indent: 2em;
+}
+.position {/*段落文字位置*/
+	font-family: "Times New Roman", "新細明體";	
+	margin-left:4em;
+	margin-right:0em;
+	} 
+.list{ 
+font-family: "新細明體";
+font-size: 15pt;	
+list-style-type: decimal; /*不編號*/
+line-height: 150%; /*設定行高*/ 
+margin-left: 2em;  /*左邊界值*/
+text-indent: 0em;
+} 
+.list_en{ 
+font-family: "Times New Roman";
+font-size: 15pt;	
+list-style-type: decimal; /*阿拉伯數字*/
+line-height: 150%; /*設定行高*/ 
+margin-left: 2em;  /*左邊界值*/
+text-indent: 0px;
+}
+.body_margin-4 { /*整段不縮排，首行縮排2em，段落間距 2em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 15pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 0em;  /*左邊界值*/
+	text-indent: 2em;
+	margin-bottom: 2em; /*下邊界值*/
+}
+.style1 {
+				text-align: center;
+				font-size:24px;
+				font-weight: bold;
+}
+.style2 {
+				text-align: center;
+}
+.style3 {
+				font-size: 15pt;
+}
+.style4 {
+				text-align: left;padding-top:0.2em;padding-bottom:0.2em;padding-left:0.3em;padding-right:0.3em;
+}
+#myTable{
+width:90%;border-collapse:collapse;margin:1em 0;
+margin-left:auto;
+margin-right:auto;
+font-family: "Times New Roman", "新細明體";
+}
+td{
+text-align:left;padding:.1em;border:1px solid #fff;
+}
+#myTable th{
+text-align:left;padding:.1em;border:1px solid #fff;
+}
+th{
+background-color:#328aa4;color:#fff;
+}
+td{background:#e5f1f4;}
+tr.even td{background:#e5f1f4;}
+tr.odd td{background:#f8fbfc;}
+tr.over td{background:#bce774;}
+tr.out td{
+}

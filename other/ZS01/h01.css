@@ -1,0 +1,262 @@
+﻿.head {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 70px; /*上邊界*/
+	margin-bottom: 70px;
+}
+.head_1 {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 1.5em; /*上邊界*/
+	margin-bottom: 1.5em;
+}
+.head_2 {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 14pt;
+	font-weight: bold;
+	margin-left: 0em;  /*左邊界值*/
+	margin-top: 1.2em; /*上邊界*/
+	margin-bottom: 1.2em;
+}
+.head_3 {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 14pt;
+	margin-left: 2em;  /*左邊界值*/
+	margin-top: 1.2em; /*上邊界*/
+	margin-bottom: 1.2em;
+}
+.body_nor {
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+}
+.body_right {
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 110%; /*設定行高*/ 
+	text-align: right;
+}
+.body_margin-1 {/*整段縮排4em，首行凸排2em */
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 4em;  /*左邊界值*/
+	text-indent: -2em; /*首行文字縮排*/
+
+}
+.body_margin-1_1 {/*整段縮排4em，首行凸排1em */
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 4em;  /*左邊界值*/
+	text-indent: -3em; /*首行文字縮排*/
+}
+.body_margin-1_2 {/*整段縮排4em，首行凸排 0.5em */
+		font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/;
+	margin-left: 4em; /*左邊界值*/;
+	text-indent: -1em; /*首行文字縮排*/
+}
+.body_margin-1_3 {/*整段縮排4em，首行凸排1em */
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 100%; /*設定行高*/ 
+	margin-left: 8em;  /*左邊界值*/
+	text-indent: -3em; /*首行文字縮排*/
+}
+
+.body_margin-2 {/*整段縮排4 em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 4em;  /*左邊界值*/
+	text-indent: 0em; /*首行文字縮排*/
+}
+.body_margin-2_1 {/*整段縮排6 em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 6em;  /*左邊界值*/
+	text-indent: 0em; /*首行文字縮排*/
+}
+.body_margin-2_2 {/*整段縮排2 em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 2em;  /*左邊界值*/
+	text-indent: 0em; /*首行文字縮排*/
+}
+
+.body_margin-3 {/*日文序用標楷體*/
+	font-family: 標楷體;
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 0em;  /*左邊界值*/
+	text-indent: 2em; /*首行文字縮排*/	
+	margin-bottom: 50px; /*下邊界值*/
+}
+.body_margin-4 { /*整段不縮排，首行縮排2em，段落間距 2em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 0em;  /*左邊界值*/
+	text-indent: 2em;
+	margin-bottom: 2em; /*下邊界值*/
+}
+.body_margin-4_1 { /*整段不縮排，首行縮排2em，段落間距 2em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 0em;  /*左邊界值*/
+	text-indent: 2em;
+	margin-bottom: 0em; /*下邊界值*/
+}
+.body_margin-4_1_1 { /*整段不縮排，首行縮排2em，段落間距 2em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-left: 6em;  /*左邊界值*/
+	text-indent: -4em;
+	margin-bottom: 0em; /*下邊界值*/
+}
+.body_margin-5 {
+	/*目錄用，不縮排，段落無間距，右邊縮排15em*/
+	font-family: "Times New Roman", "新細明體";
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/;
+	margin-left: 0em; /*左邊界值*/;
+	text-indent: 2em;
+	margin-right: 0em; /*右邊界值*/
+}
+.body_margin-5_1 {
+				/*目錄用，不縮排，段落無間距，右邊縮排15em*/
+	font-family: "Times New Roman", "新細明體";
+				font-size: 14pt;
+				line-height: 80%; /*設定行高*/;
+				margin-left: 0em; /*左邊界值*/;
+				text-indent: 2em;
+				margin-right: 0em; /*右邊界值*/
+				margin-bottom: 0em; /*下邊界值*/
+
+}
+.body_unicode {
+	font-family: "Arial Unicode MS";	
+	font-size: 14pt;
+	line-height: 150%; /*設定行高*/ 
+	margin-bottom: 50px; /*下邊界值*/
+}
+span.corr {
+color:#FF0000;
+font-weight: normal; 
+}
+.note {
+font-family: "Times New Roman", "新細明體";
+font-size: 12pt;
+line-height: 100%; /*設定行高*/ 
+
+}
+
+.list_ch{ 
+font-family: "新細明體";
+font-size: 14pt;	
+list-style-type: none; /*不編號*/
+line-height: 150%; /*設定行高*/ 
+margin-left: 2em;  /*左邊界值*/
+text-indent: -2em;
+} 
+.list_en{ 
+font-family: "Times New Roman";
+font-size: 14pt;	
+list-style-type: decimal; /*阿拉伯數字*/
+line-height: 150%; /*設定行高*/ 
+margin-left: 2em;  /*左邊界值*/
+text-indent: 0px;
+}
+.in{
+list-style-position: inside;
+}
+.out{
+list-style-position: outside;
+}
+a:link{
+	font: small serif;
+	color: #FF00FF;
+	text-decoration: underline;
+}
+td {
+	border: 1px solid #D4E0EE;
+	border-collapse: collapse;
+	font-family: "新細明體", "PMingLiU", "serif";
+	color: #555;
+}
+
+th {
+	border: 1px solid #D4E0EE;
+	border-collapse: collapse;
+	font-family: "新細明體", "PMingLiU", "serif";
+	color: #555;
+}
+
+table {
+	border: 1px solid #D4E0EE;
+	border-collapse: collapse;
+	font-family: "新細明體", "PMingLiU", "serif";
+	color: #555;
+}
+
+caption {
+	font-size: 150%;
+	font-weight: bold;
+	margin: 5px;
+}
+
+th {
+	padding: 4px;
+}
+
+td {
+	padding: 4px;
+}
+
+thead th {
+	text-align: center;
+	background: #E6EDF5;
+	color: #4F76A3;
+	font-size: 100% !important;
+}
+
+tbody th {
+	font-weight: bold;
+}
+
+tbody tr { background: #FCFDFE; }
+
+tbody tr.odd { background: #F7F9FC; }
+
+table a:link {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+table a:visited {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+table a:hover {
+	color: #718ABE;
+	text-decoration: underline !important;
+}
+
+tfoot td {
+	font-size: 85%;
+}
+
+tfoot th {
+	font-size: 85%;
+}

@@ -1,0 +1,39 @@
+﻿.head {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 70px; /*上邊界*/
+	margin-bottom: 70px;
+}
+.head_1 {
+	font-family: "Times New Roman","PMingLiU", "新細明體", "serif";
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 1.5em; /*上邊界*/
+	margin-bottom: 1.5em;
+}
+.position {/*段落文字位置*/
+	font-family: "Times New Roman", "新細明體";	
+	margin-left:2em;
+	margin-right:4em;
+}
+#myTable{
+width:70%;border-collapse:collapse;margin:1em 0;
+margin-left:auto;
+margin-right:auto;
+font-family: "Times New Roman", "新細明體";
+}
+#myTable th,td{
+text-align:left;padding:.1em;border:1px solid #fff;
+}
+th{
+background-color:#328aa4;color:#fff;
+}
+td{background:#e5f1f4;}
+tr.even td{background:#e5f1f4;}
+tr.odd td{background:#f8fbfc;}
+tr.over td{background:#bce774;}
+tr.out td{
+}
