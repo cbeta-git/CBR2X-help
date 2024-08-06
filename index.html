@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CBReader 2024 R2</title>
+		<style>
+			:root {
+				--main-color: #8f261c;
+			}
+			body {
+				height: 100vh;
+				margin: 0;
+				background-color: #f8f7ee;
+			}
+			h1 {
+				text-align: center;
+				border-bottom: 2px solid #e5dfc4;
+				padding-bottom: 5px;
+			}
+			.row {
+				flex: 1;
+				display: flex;
+			}
+			.row * {
+				flex: 1;
+			}
+			.column {
+				margin: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 20px 50px;
+			}
+			.column div {
+				margin: 10px auto;
+			}
+			#banner {
+				width: 100%;
+				height: 180px;
+				background-color: #ffffff;
+				border-top: 5px solid #f1efe1;
+				border-bottom: 5px solid #f1efe1;
+				text-align: center;
+				background-image: url("img/banner.png");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#banner img {
+				height: 100%;
+			}
+			#footer {
+				background-color: #eae7d6;
+				padding: 20px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				flex-wrap: wrap;
+			}
+			#footer p {
+				margin: 0;
+			}
+			#footer strong {
+				font-size: 1.1em;
+				color: #05b09b;
+			}
+			#footer a {
+				color: #001c8a;
+				text-decoration: none;
+			}
+			#ad-area {
+				padding: 20px;
+				flex-grow: 0;
+				display: flex;
+				flex-direction: column;
+				align-content: end;
+				flex-wrap: wrap;
+			}
+			.ad-div {
+				border: 1px solid var(--main-color);
+				padding: 10px 15px;
+				margin-bottom: 10px;
+				border-radius: 8px;
+				font-size: 1.25em;
+				max-width: 180px;
+				letter-spacing: 1px;
+				background: #fff;
+				color: var(--main-color);
+				text-align: center;
+				text-decoration: none;
+			}
+			a.ad-div {
+				max-height: 1.25em;
+				font-size: 1em;
+				display: inline-flex;
+				align-items: center;
+			}
+			div.ad-div {
+				line-height: 18px;
+				border: none;
+			}
+			#ad-area div img {
+				width: 100px;
+			}
+			#info {
+				margin: 10px auto;
+				flex-grow: 2;
+				font-size: 1.25em;
+				font-weight: bold;
+				padding: 0 20px;
+			}
+			#main {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			ul > li {
+				font-size: 1.1em;
+			}
+			ul ul > li {
+				font-size: inherit;
+			}
+			li {
+				padding-bottom: 10px;
+			}
+			nav {
+				padding: 10px 15px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			nav img {
+				height: 1.5em;
+			}
+			nav a {
+				display: flex;
+				height: 1.25em;
+				text-decoration: none;
+				gap: 5px;
+				color: var(--main-color);
+				border: 1px solid var(--main-color);
+				padding: 4px 8px;
+				border-radius: 4px;
+				background-color: #fff;
+				align-items: center;
+			}
+			svg {
+				fill: var(--main-color);
+				height: 1em;
+				max-width: 1em;
+			}
+			#quick-btns {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				gap: 5px;
+			}
+			.sns-label {
+				font-size: 0.8em;
+				color: #05b09b;
+			}
+			#heart {
+				fill: red;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<img src="img/logo.png" />
+			<div id="quick-btns">
+				<a href="https://www.cbeta.org/" target="_blank"
+					><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+						<!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+						/>
+					</svg>
+					<span>官網</span></a
+				>
+				<a href="https://www.cbeta.org/forum" target="_blank"
+					><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9l.3-.5z"
+						/></svg
+					><span>討 論 區</span></a
+				><a href="https://www.cbeta.org/copyright.php" target="_blank"
+					><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"
+						/></svg
+					><span>版權宣告</span></a
+				>
+			</div>
+		</nav>
+		<div class="" id="banner"></div>
+
+		<div class="row" id="main">
+			<div class="colume" id="info">
+				<h1>CBETA 電子佛典集成</h1>
+				<div class="row">
+					<ul>
+						<li>大正新脩大藏經</li>
+						<li>卍新纂續藏經</li>
+						<li>歷代藏經補輯</li>
+						<li>國家圖書館善本佛典</li>
+						<li>漢譯南傳大藏經</li>
+					</ul>
+					<ul>
+						<li>近代新編文獻</li>
+						<ul>
+							<li>藏外佛教文獻</li>
+							<li>正史佛教資料類編</li>
+							<li>北朝佛教石刻拓片百品</li>
+							<li>大藏經補編選錄</li>
+							<li>中國佛寺志</li>
+							<li>印順法師佛學著作集</li>
+							<li>呂澂佛學著作集</li>
+							<li>太虛大師全書</li>
+							<li>CBETA 選集</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<div class="colume" id="ad-area">
+				<a href="https://www.cbeta.org/donate/?utm_source=cbreader" target="_blank" class="ad-div"
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512 512"
+						id="heart"
+					>
+						<!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+						/></svg
+					><span>護持贊助</span></a
+				>
+				<a href="https://www.facebook.com/cbeta.org" target="_blank" class="ad-div"
+					><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+						></path>
+					</svg>
+					<span>Facebook</span></a
+				>
+				<a href="https://www.youtube.com/@cbeta-org" target="_blank" class="ad-div"
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 576 512"
+						style="margin-bottom: 2px"
+					>
+						<path
+							d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+						></path>
+					</svg>
+					<span>Youtube</span></a
+				>
+
+				<div class="ad-div">
+					<img src="img/line.png" /><span class="sns-label"
+						>@cbeta<br />LINE好友</span
+					>
+				</div>
+				<div class="ad-div">
+					<img src="img/wechat.png" />
+					<span class="sns-label">@cbeta2020<br />微信WeChat</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="row" style="max-width: 900px">
+				<div>
+					<strong>主辦單位</strong><br />
+					<p style="font-weight: 600">CBETA 財團法人佛教電子佛典基金會</p>
+					<p>
+						<i class="fas fa-envelope" aria-hidden="true"></i>
+						<a href="mailto:service@cbeta.org" target="_blank">service@cbeta.org</a>　
+					</p>
+					<p>
+						<i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+						(02)2383-2182 轉分機 12
+					</p>
+					<p>
+						<i class="fas fa-map-marker-alt" aria-hidden="true"></i> 10044
+						台北市中正區延平南路 77 號 8 樓 R812
+					</p>
+				</div>
+				<div style="max-width: 900px">
+					<p class="style9">
+						<strong>協辦單位</strong><br />
+						<a class="menu2" href="http://www.chibs.edu.tw" target="_blank"
+							>中華佛學研究所</a
+						>、<a href="https://www.dila.edu.tw/" target="_blank" class="menu2"
+							>法鼓文理學院</a
+						><strong
+							><span class="style8"><br /> </span></strong
+						>菩提文教基金會、<a
+							class="menu2"
+							href="https://seelandboya.org/"
+							target="_blank"
+							>西蓮教育基金會</a
+						>
+					</p>
+
+					<p class="style9">
+						<strong>贊 助 者</strong><br />
+						<a class="menu2" href="https://www.yinshun.org" target="_blank"
+							>印順基金會</a
+						>（美國）、
+						<a class="menu2" href="http://www.budaedu.org" target="_blank"
+							>佛陀教育基金會</a
+						>、<br />
+						行政院國家科學委員會、<a
+							class="menu2"
+							href="https://www.most.gov.tw/"
+							target="_blank"
+							>行政院科技部</a
+						>、黃淑玲居士與<a
+							class="menu2"
+							href="https://www.cbeta.org/gongde.php"
+							target="_blank"
+							>諸大德</a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
